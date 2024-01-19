@@ -1,0 +1,88 @@
+{
+  "id": "products",
+  "type": "SharedSlice",
+  "name": "Products",
+  "description": "Products",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Título",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3,heading4,heading5,heading6"
+          }
+        },
+        "product_link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Texto do botão de link do produto",
+            "placeholder": ""
+          }
+        },
+        "product_signup_label": {
+          "type": "Text",
+          "config": {
+            "label": "Texto do botão para assinar",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "product_name": {
+          "type": "Text",
+          "config": {
+            "label": "Nome do produto",
+            "placeholder": ""
+          }
+        },
+        "product_description": {
+          "type": "Text",
+          "config": {
+            "label": "Descrição do produto",
+            "placeholder": ""
+          }
+        },
+        "product_link": {
+          "type": "Link",
+          "config": {
+            "label": "Link do produto",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "product_signed": {
+          "type": "Boolean",
+          "config": {
+            "label": "Produto assinado",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "product_signed_name": {
+          "type": "Text",
+          "config": {
+            "label": "Nome de quem assinou",
+            "placeholder": ""
+          }
+        },
+        "product_signed_phone": {
+          "type": "Text",
+          "config": {
+            "label": "Telefone de quem assinou",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

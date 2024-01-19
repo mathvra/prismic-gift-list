@@ -220,6 +220,137 @@ type HeroSliceVariation = HeroSliceDefault;
  */
 export type HeroSlice = prismic.SharedSlice<"hero", HeroSliceVariation>;
 
+/**
+ * Primary content in *Products → Primary*
+ */
+export interface ProductsSliceDefaultPrimary {
+  /**
+   * Título field in *Products → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.TitleField;
+
+  /**
+   * Texto do botão de link do produto field in *Products → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.primary.product_link_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  product_link_label: prismic.KeyTextField;
+
+  /**
+   * Texto do botão para assinar field in *Products → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.primary.product_signup_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  product_signup_label: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *Products → Items*
+ */
+export interface ProductsSliceDefaultItem {
+  /**
+   * Nome do produto field in *Products → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.items[].product_name
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  product_name: prismic.KeyTextField;
+
+  /**
+   * Descrição do produto field in *Products → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.items[].product_description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  product_description: prismic.KeyTextField;
+
+  /**
+   * Link do produto field in *Products → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.items[].product_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  product_link: prismic.LinkField;
+
+  /**
+   * Produto assinado field in *Products → Items*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: products.items[].product_signed
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  product_signed: prismic.BooleanField;
+
+  /**
+   * Nome de quem assinou field in *Products → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.items[].product_signed_name
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  product_signed_name: prismic.KeyTextField;
+
+  /**
+   * Telefone de quem assinou field in *Products → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.items[].product_signed_phone
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  product_signed_phone: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for Products Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProductsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ProductsSliceDefaultPrimary>,
+  Simplify<ProductsSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Products*
+ */
+type ProductsSliceVariation = ProductsSliceDefault;
+
+/**
+ * Products Shared Slice
+ *
+ * - **API ID**: `products`
+ * - **Description**: Products
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProductsSlice = prismic.SharedSlice<
+  "products",
+  ProductsSliceVariation
+>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -241,6 +372,11 @@ declare module "@prismicio/client" {
       HeroSliceDefaultPrimary,
       HeroSliceVariation,
       HeroSliceDefault,
+      ProductsSlice,
+      ProductsSliceDefaultPrimary,
+      ProductsSliceDefaultItem,
+      ProductsSliceVariation,
+      ProductsSliceDefault,
     };
   }
 }

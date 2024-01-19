@@ -1,0 +1,143 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Escolha um presente desejado",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"product_link_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Sugestão de compra"
+			},
+			"product_signup_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Assinar"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"product_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Geladeira"
+						}
+					],
+					[
+						"product_description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Geladeira top demais"
+						}
+					],
+					[
+						"product_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://twitter.com",
+								"target": "_blank"
+							}
+						}
+					],
+					[
+						"product_signed",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
+					],
+					[
+						"product_signed_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "dull",
+							"type": "Text"
+						}
+					],
+					[
+						"product_signed_phone",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "thin",
+							"type": "Text"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"product_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Sofá"
+						}
+					],
+					[
+						"product_description",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Sofá top demais"
+						}
+					],
+					[
+						"product_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://twitter.com",
+								"target": "_blank"
+							}
+						}
+					],
+					[
+						"product_signed",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
+					],
+					[
+						"product_signed_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "theory",
+							"type": "Text"
+						}
+					],
+					[
+						"product_signed_phone",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "escape",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]
