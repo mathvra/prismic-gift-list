@@ -7,8 +7,6 @@ export default async function Header() {
 
   return (
     <header>
-      {settings.data.site_title}
-
       <nav>
         <ul>
           {settings.data.navigation.map(({ link, label }) => (

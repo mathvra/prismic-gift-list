@@ -1,0 +1,45 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Lista de casamento de Lays e Matheus",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "YeJWDWeIZho",
+					"url": "https://images.unsplash.com/photo-1553915632-175f60dd8e36?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxtYXJyeXxlbnwwfHx8fDE3MDU2NzQ0OTV8MA&ixlib=rb-4.0.3&q=85",
+					"width": 5184,
+					"height": 3456
+				},
+				"url": "https://images.unsplash.com/photo-1553915632-175f60dd8e36?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxtYXJyeXxlbnwwfHx8fDE3MDU2NzQ0OTV8MA&ixlib=rb-4.0.3&q=85",
+				"width": 5184,
+				"height": 3456,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"alt": "two gold-colored rings on paper",
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			}
+		},
+		"items": []
+	}
+]
