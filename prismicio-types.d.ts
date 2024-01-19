@@ -4,7 +4,7 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type HomeDocumentDataSlicesSlice = HeroSlice;
+type HomeDocumentDataSlicesSlice = ProductsSlice | HeroSlice;
 
 /**
  * Content for Home documents
@@ -319,6 +319,16 @@ export interface ProductsSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   product_signed_phone: prismic.KeyTextField;
+
+  /**
+   * Teste field in *Products → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.items[].teste
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  teste: prismic.KeyTextField;
 }
 
 /**

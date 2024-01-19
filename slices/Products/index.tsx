@@ -15,8 +15,10 @@ const Products = ({ slice }: ProductsProps): JSX.Element => {
         {slice.items.map(
           ({ product_name, product_description, product_link }, index) => (
             <div key={index}>
+              ------------------------------------
               <h3>{product_name}</h3>
               <span>{product_description}</span>
+              <br />
               <PrismicNextLink field={product_link}>
                 {slice.primary.product_link_label}
               </PrismicNextLink>
