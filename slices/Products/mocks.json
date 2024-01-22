@@ -80,14 +80,6 @@
 							"value": "thin",
 							"type": "Text"
 						}
-					],
-					[
-						"teste",
-						{
-							"__TYPE__": "FieldContent",
-							"value": "corner",
-							"type": "Text"
-						}
 					]
 				]
 			},
@@ -141,14 +133,6 @@
 						{
 							"__TYPE__": "FieldContent",
 							"value": "escape",
-							"type": "Text"
-						}
-					],
-					[
-						"teste",
-						{
-							"__TYPE__": "FieldContent",
-							"value": "needle",
 							"type": "Text"
 						}
 					]

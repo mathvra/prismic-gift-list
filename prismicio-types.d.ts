@@ -319,16 +319,6 @@ export interface ProductsSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   product_signed_phone: prismic.KeyTextField;
-
-  /**
-   * Teste field in *Products → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: products.items[].teste
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  teste: prismic.KeyTextField;
 }
 
 /**

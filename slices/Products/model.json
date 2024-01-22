@@ -81,13 +81,6 @@
             "label": "Telefone de quem assinou",
             "placeholder": ""
           }
-        },
-        "teste": {
-          "type": "Text",
-          "config": {
-            "label": "Teste",
-            "placeholder": ""
-          }
         }
       }
     }
